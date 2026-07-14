@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Lion Marine</title>
+<meta name="description" content="Contact Lion Marine in Honolulu, HI: address, phone, email, hours, and a map to Keehi Marine Center.">
+<link rel="icon" href="assets/images/logo-lion.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav container">
+    <a class="nav__brand" href="index.html">
+      <img src="assets/images/logo-lion.png" alt="Lion Marine" class="nav__logo">
+      <span class="nav__brand-text">Lion Marine</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+      <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="motors.html">Motors</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <a class="nav__phone" href="tel:+18083006894">(808) 300-6894</a>
+  </div>
+</header>
+
+<main>
+  <h1 class="section__heading" style="padding-top: var(--space-6);">Contact Us</h1>
+  <div class="contact-grid container">
+    <div class="contact-panel">
+      <section>
+        <h2>Address</h2>
+        <p>24 Sand Island Access Rd.<br>Honolulu, HI 96819</p>
+        <p>Mailing Address:<br>PO Box 8174<br>Honolulu, HI 96830</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p class="font-mono"><a href="tel:+18083006894">(808) 300-6894</a></p>
+        <p><a href="mailto:LionMarineService@gmail.com">LionMarineService@gmail.com</a></p>
+      </section>
+      <section>
+        <h2>Opening Hours</h2>
+        <p class="font-mono">Mon &ndash; Fri<br>8:00am &ndash; 5:00pm</p>
+      </section>
+    </div>
+    <form class="form" action="#" method="post">
+      <div class="form__row">
+        <div class="form__field"><label for="ct-first">First Name</label><input id="ct-first" name="firstName" type="text"></div>
+        <div class="form__field"><label for="ct-last">Last Name</label><input id="ct-last" name="lastName" type="text"></div>
+      </div>
+      <div class="form__field"><label for="ct-email">Email *</label><input id="ct-email" name="email" type="email" required></div>
+      <div class="form__field"><label for="ct-message">Message</label><textarea id="ct-message" name="message"></textarea></div>
+      <button type="submit" class="btn btn--primary">Send</button>
+    </form>
+  </div>
+  <div class="container" style="padding-bottom: var(--space-6);">
+    <iframe class="map-embed" title="Lion Marine location map" loading="lazy" src="https://www.google.com/maps?q=24+Sand+Island+Access+Rd,+Honolulu,+HI+96819&output=embed"></iframe>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <img src="assets/images/logo-lion.png" alt="" class="site-footer__logo">
+      <p class="font-display site-footer__name">Lion Marine</p>
+      <p>Outboard Sales and Repair</p>
+    </div>
+    <div class="site-footer__col">
+      <h3>Hours</h3>
+      <p class="font-mono">Mon&ndash;Fri, 8AM&ndash;5PM</p>
+      <p>After-hours emergency calls accepted (additional charge).</p>
+    </div>
+    <div class="site-footer__col">
+      <h3>Contact</h3>
+      <p><a href="tel:+18083006894" class="font-mono">(808) 300-6894</a></p>
+      <p><a href="mailto:Lionmarineservice@gmail.com">Lionmarineservice@gmail.com</a></p>
+    </div>
+    <div class="site-footer__col">
+      <h3>Location</h3>
+      <p>24 Sand Island Access Rd<br>Honolulu, HI 96819<br>(Keehi Marine Center)</p>
+      <p>P.O. Box 8174<br>Honolulu, HI 96830</p>
+    </div>
+  </div>
+  <p class="site-footer__legal container">&copy; 2026 Lion Marine. Mobile service available throughout the Hawaiian Islands.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -34,3 +34,11 @@
 .motor-dial__range { font-weight: 700; font-size: 1rem; }
 .motor-dial__unit { font-size: 0.65rem; letter-spacing: 0.08em; }
 .motor-note { font-size: 0.85rem; color: var(--color-hull-green); font-weight: 600; margin-top: var(--space-2); }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); padding: var(--space-6) var(--space-3); }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+.contact-panel { background: var(--color-chart-navy); color: var(--color-plate-paper); border-radius: var(--radius-md); padding: var(--space-4); }
+.contact-panel h2 { color: var(--color-brass); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.contact-panel section + section { margin-top: var(--space-4); }
+.map-embed { width: 100%; border: 0; border-radius: var(--radius-md); min-height: 360px; }
