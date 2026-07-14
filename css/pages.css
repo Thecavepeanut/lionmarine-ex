@@ -24,3 +24,13 @@
 .cta-banner__grid { max-width: 640px; margin: 0 auto; }
 .cta-banner .btn--primary { background: var(--color-brass); border-color: var(--color-brass); }
 .cta-banner .btn--primary:hover { background: var(--color-white); color: var(--color-engine-black); border-color: var(--color-white); }
+
+/* Motor dial */
+.motor-dial {
+  width: 96px; height: 96px; border-radius: 50%; border: 3px solid var(--color-brass);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  margin-bottom: var(--space-3); font-family: var(--font-mono);
+}
+.motor-dial__range { font-weight: 700; font-size: 1rem; }
+.motor-dial__unit { font-size: 0.65rem; letter-spacing: 0.08em; }
+.motor-note { font-size: 0.85rem; color: var(--color-hull-green); font-weight: 600; margin-top: var(--space-2); }
