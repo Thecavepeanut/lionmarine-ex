@@ -1,18 +1,30 @@
 /* Hero */
-.hero { position: relative; min-height: 640px; display: flex; align-items: flex-end; color: var(--color-white); overflow: hidden; }
+.hero { position: relative; min-height: 640px; display: flex; align-items: flex-end; color: var(--color-white); overflow: hidden; border-bottom: 4px solid var(--color-brass); }
 .hero__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .hero__overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,24,17,0.35) 0%, rgba(14,24,17,0.85) 100%); }
 .hero__content { position: relative; padding-bottom: var(--space-6); }
-.hero__headline { color: var(--color-white); margin-bottom: var(--space-2); }
-.hero__sub { font-size: 1.15rem; max-width: 42ch; margin-bottom: var(--space-4); }
+.hero__headline {
+  color: var(--color-white); margin-bottom: var(--space-2);
+  font-weight: 900; text-transform: uppercase; letter-spacing: 0.015em;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+}
+.hero__sub { font-size: 1.2rem; max-width: 42ch; margin-bottom: var(--space-4); }
+.hero .eyebrow { text-shadow: 0 1px 10px rgba(14, 24, 26, 0.85); }
+.hero__headline, .hero__sub { text-shadow: 0 2px 16px rgba(14, 24, 26, 0.45); }
 .hero__actions { display: flex; gap: var(--space-3); flex-wrap: wrap; }
 
 /* Trust bar */
 .trust-bar {
-  display: flex; justify-content: center; gap: var(--space-5); flex-wrap: wrap;
+  display: flex; justify-content: center; gap: var(--space-3); flex-wrap: wrap;
   padding: var(--space-4) var(--space-3); border-bottom: 1px solid var(--color-sand-tan);
   font-size: 0.8rem; letter-spacing: 0.06em; color: var(--color-hull-green); margin: 0;
 }
+.trust-bar__item {
+  border: 1px solid var(--color-sand-tan); background: var(--color-white);
+  padding: 0.45rem 1rem; border-radius: var(--radius-sm);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.trust-bar__item:hover { border-color: var(--color-brass); color: var(--color-brass); }
 
 /* Info strip */
 .info-strip { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); padding: var(--space-6) var(--space-3); }
@@ -30,10 +42,41 @@
   width: 96px; height: 96px; border-radius: 50%; border: 3px solid var(--color-brass);
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   margin-bottom: var(--space-3); font-family: var(--font-mono);
+  background: var(--color-white);
 }
 .motor-dial__range { font-weight: 700; font-size: 1rem; }
 .motor-dial__unit { font-size: 0.65rem; letter-spacing: 0.08em; }
-.motor-note { font-size: 0.85rem; color: var(--color-hull-green); font-weight: 600; margin-top: var(--space-2); }
+.motor-note { font-size: 0.9rem; color: var(--color-hull-green); font-weight: 700; margin-top: var(--space-2); }
+
+/* Motors catalog */
+.motors-stats { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-5); }
+.motors-stats span {
+  font-family: var(--font-mono); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em;
+  color: var(--color-hull-green); background: var(--color-white);
+  border: 1px solid var(--color-sand-tan); border-radius: var(--radius-sm);
+  padding: 0.45rem 1rem;
+}
+.family { margin-bottom: var(--space-4); }
+.family__head { display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap; margin-bottom: var(--space-2); }
+.family__head .motor-dial { margin-bottom: 0; flex-shrink: 0; width: 88px; height: 88px; }
+.family__title { margin-bottom: 2px; font-size: 1.6rem; }
+.family__blurb { margin: 0; max-width: 60ch; }
+.hp-chips { display: flex; flex-wrap: wrap; gap: var(--space-1); margin: var(--space-3) 0 var(--space-2); }
+.hp-chip {
+  font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600;
+  padding: 0.35rem 0.75rem; border: 1px solid var(--color-sand-tan);
+  border-radius: var(--radius-sm); background: var(--color-plate-paper);
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.hp-chip:hover { background: var(--color-hull-green); border-color: var(--color-hull-green); color: var(--color-white); }
+.family__meta { font-size: 0.9rem; color: #6b6456; margin-bottom: var(--space-3); }
+.family__cta { display: flex; gap: var(--space-3); align-items: center; flex-wrap: wrap; }
+.family__cta .motor-note { margin: 0; }
+@media (max-width: 600px) {
+  .family__head { gap: var(--space-3); }
+  .family__head .motor-dial { width: 72px; height: 72px; }
+  .family__head .motor-dial .motor-dial__range { font-size: 0.85rem; }
+}
 
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); padding: var(--space-6) var(--space-3); }
