@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Lion Marine</title>
+<meta name="description" content="Repowering, outboard engine diagnostics and repair, marine electronics and audio installation, and solar for boats in Honolulu, HI.">
+<link rel="icon" href="assets/images/logo-lion.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav container">
+    <a class="nav__brand" href="index.html">
+      <img src="assets/images/logo-lion.png" alt="Lion Marine" class="nav__logo">
+      <span class="nav__brand-text">Lion Marine</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+      <span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="motors.html">Motors</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="nav__phone" href="tel:+18083006894">(808) 300-6894</a>
+  </div>
+</header>
+
+<main>
+  <section class="section container">
+    <h1 class="section__heading">We&rsquo;re here to assist having the best boating experience</h1>
+    <div class="plate-grid">
+      <div class="plate-card">
+        <span class="rivet rivet--tl"></span><span class="rivet rivet--tr"></span><span class="rivet rivet--bl"></span><span class="rivet rivet--br"></span>
+        <img src="assets/images/svc-repowering.jpeg" alt="Boat on a trailer during an outboard repower">
+        <span class="plate-card__code">SVC&mdash;01 REPOWER</span>
+        <h3 class="plate-card__title">Repowering</h3>
+        <p class="plate-card__body">Full engine repower for your existing hull.</p>
+      </div>
+      <div class="plate-card">
+        <span class="rivet rivet--tl"></span><span class="rivet rivet--tr"></span><span class="rivet rivet--bl"></span><span class="rivet rivet--br"></span>
+        <img src="assets/images/svc-outboard.jpeg" alt="Technician servicing an outboard propeller">
+        <span class="plate-card__code">SVC&mdash;02 SERVICE</span>
+        <h3 class="plate-card__title">Outboard Engine Services</h3>
+        <p class="plate-card__body">Diagnostics, repair, and parts for Mercury outboards.</p>
+      </div>
+      <div class="plate-card">
+        <span class="rivet rivet--tl"></span><span class="rivet rivet--tr"></span><span class="rivet rivet--bl"></span><span class="rivet rivet--br"></span>
+        <img src="assets/images/svc-electronics.jpeg" alt="Marine electronics">
+        <span class="plate-card__code">SVC&mdash;03 ELECTRONICS</span>
+        <h3 class="plate-card__title">Electronics and Audio Installations</h3>
+        <p class="plate-card__body">Raymarine electronics and Fusion marine audio installs.</p>
+      </div>
+      <div class="plate-card">
+        <span class="rivet rivet--tl"></span><span class="rivet rivet--tr"></span><span class="rivet rivet--bl"></span><span class="rivet rivet--br"></span>
+        <img src="assets/images/svc-solar.jpeg" alt="Marine solar panel installation">
+        <span class="plate-card__code">SVC&mdash;04 SOLAR</span>
+        <h3 class="plate-card__title">Solar</h3>
+        <p class="plate-card__body">Marine solar systems for auxiliary power.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2 class="section__heading">Get a Free Quote</h2>
+    <p style="text-align:center; max-width: 640px; margin: 0 auto var(--space-4);">Please feel free to contact us with any questions and we will respond promptly.</p>
+    <form class="form" action="#" method="post">
+      <div class="form__row">
+        <div class="form__field"><label for="svc-first">First Name</label><input id="svc-first" name="firstName" type="text"></div>
+        <div class="form__field"><label for="svc-last">Last Name</label><input id="svc-last" name="lastName" type="text"></div>
+      </div>
+      <div class="form__field"><label for="svc-email">Email *</label><input id="svc-email" name="email" type="email" required></div>
+      <div class="form__field"><label for="svc-phone">Phone #</label><input id="svc-phone" name="phone" type="tel"></div>
+      <div class="form__field"><label for="svc-serial">Engine Serial #</label><input id="svc-serial" name="engineSerial" type="text"></div>
+      <div class="form__field"><label for="svc-message">Service Requesting</label><textarea id="svc-message" name="serviceRequesting" placeholder="Please describe the service you would like performed or size of engine you would like to purchase"></textarea></div>
+      <button type="submit" class="btn btn--primary">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <img src="assets/images/logo-lion.png" alt="" class="site-footer__logo">
+      <p class="font-display site-footer__name">Lion Marine</p>
+      <p>Outboard Sales and Repair</p>
+    </div>
+    <div class="site-footer__col">
+      <h3>Hours</h3>
+      <p class="font-mono">Mon&ndash;Fri, 8AM&ndash;5PM</p>
+      <p>After-hours emergency calls accepted (additional charge).</p>
+    </div>
+    <div class="site-footer__col">
+      <h3>Contact</h3>
+      <p><a href="tel:+18083006894" class="font-mono">(808) 300-6894</a></p>
+      <p><a href="mailto:Lionmarineservice@gmail.com">Lionmarineservice@gmail.com</a></p>
+    </div>
+    <div class="site-footer__col">
+      <h3>Location</h3>
+      <p>24 Sand Island Access Rd<br>Honolulu, HI 96819<br>(Keehi Marine Center)</p>
+      <p>P.O. Box 8174<br>Honolulu, HI 96830</p>
+    </div>
+  </div>
+  <p class="site-footer__legal container">&copy; 2026 Lion Marine. Mobile service available throughout the Hawaiian Islands.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
