@@ -1,0 +1,28 @@
+:root {
+  --color-hull-green: #104F1E;
+  --color-engine-black: #14181A;
+  --color-plate-paper: #F3F0E8;
+  --color-sand-tan: #C9BB9C;
+  --color-brass: #B4863B;
+  --color-chart-navy: #0E2A36;
+  --color-white: #FFFFFF;
+
+  --font-display: 'Big Shoulders Display', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4.5rem;
+  --space-7: 7rem;
+
+  --radius-sm: 2px;
+  --radius-md: 6px;
+
+  --container-width: 1180px;
+
+  --focus-ring: 3px solid var(--color-brass);
+}
